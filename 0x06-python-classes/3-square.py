@@ -3,6 +3,8 @@
 
 
 class Square:
+    """class that defines a square"""
+
     def __init__(self, size=0):
         self.__size = size
         """initializing size as private attribute"""
@@ -13,7 +15,7 @@ class Square:
 
         if size < 0:
             raise ValueError("size must be >= 0")
-        """Checks id size if lower than zero"""
+        """Checks if size is lower than zero"""
 
     def area(self):
         """defining a method to calc the square area"""
