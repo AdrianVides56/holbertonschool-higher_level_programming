@@ -34,11 +34,14 @@ class Square:
     def my_print(self):
         """defining a method to print the square"""
         i, j = 0, 0
-        while i < self.__size:
-            while j < self.__size:
-                print("#", end="")
-                j += 1
-            j = 0
+        if self.__size == 0:
             print()
-            i += 1
-        print()
+        else:
+            while i < self.__size:
+                while j < self.__size:
+                    print("#", end="")
+                    j += 1
+                j = 0
+                print()
+                i += 1
+            print()
