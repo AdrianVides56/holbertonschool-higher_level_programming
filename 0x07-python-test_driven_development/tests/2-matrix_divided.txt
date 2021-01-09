@@ -75,7 +75,7 @@ Testing if parameter div is not a number:
 	>>> matrix_divided(matrix, "two")
 	Traceback (most recent call last):
 	...
-	TypeError: div must be a numbeTypeError: div must be a number
+	TypeError: div must be a number
 
 Testing if parameter div is Zero:
 	>>> matrix = [[1, 2, 3], [4, 5, 6]]
