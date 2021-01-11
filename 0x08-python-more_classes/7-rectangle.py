@@ -3,10 +3,11 @@
 
 
 class Rectangle:
+    """Defines a Rectangle class"""
+
     number_of_instances = 0
     print_symbol = '#'
 
-    """Defines a Rectangle class"""
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
