@@ -1,0 +1,39 @@
+Testing the method ```print_soted```
+____________________________________________
+
+This method prints an ascending sorted list
+--------------------------------------------
+
+Import the module:
+       >>> MyList = __import__('1-my_list').MyList
+
+Testing regular list:
+	>>> my_list = MyList()
+	>>> my_list.append(1)
+	>>> my_list.append(4)
+	>>> my_list.append(2)
+	>>> my_list.append(3)
+	>>> my_list.append(5)
+	>>> print(my_list)
+	[1, 4, 2, 3, 5]
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4, 5]
+
+Testing negative numbers:
+	>>> my_list = MyList()
+	>>> my_list.append(0)
+	>>> my_list.append(-4)
+	>>> my_list.append(-1)
+	>>> my_list.append(22)
+	>>> my_list.append(-22)
+	>>> print(my_list)
+	[0, -4, -1, 22, -22]
+	>>> my_list.print_sorted()
+	[-22, -4, -1, 0, 22]
+
+Testin empty list:
+       >>> my_list = MyList()
+       >>> print(my_list)
+       []
+       >>> my_list.print_sorted()
+       []
