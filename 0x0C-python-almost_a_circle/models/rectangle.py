@@ -78,30 +78,40 @@ class Rectangle(Base):
         for a in range(self.__y):
             print()
         for a in range(self.__height):
-            print(' ' * (self.__x - 1), '#' * self.__width)
+            print(' ' * (self.__x) + '#' * self.__width)
 
     def __str__(self):
         """ Returns rectangle information"""
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.__x, self.__y, self.__width, self.__height))
 
-    def update(self, *args):
-        """
-        Updates the rectangle:
-        - 1st argument should be the id attribute
-        - 2nd argument should be the width attribute
-        - 3rd argument should be the height attribute
-        - 4th argument should be the x attribute
-        - 5th argument should be the y attribute
-        """
-        for count in range(len(args)):
-            if count == 0:
-                self.id = args[0]
-            if count == 1:
-                self.__width = args[1]
-            if count == 2:
-                self.__height = args[2]
-            if count == 3:
-                self.__x = args[3]
-            if count == 4:
-                self.__y = args[4]
+    def update(self, *args, **kwargs):
+        """ Updates the rectangle """
+        if len(args) > 0:
+            for count in range(len(args)):
+                if count == 0:  # Updates id
+                    self.id = args[0]
+                if count == 1:  # Updates width
+                    self.__width = args[1]
+                if count == 2:  # Updates height
+                    self.__height = args[2]
+                if count == 3:  # Updates x
+                    self.__x = args[3]
+                if count == 4:  # Updates y
+                    self.__y = args[4]
+        else:
+            if "width" in kwargs:
+                self.__width = kwargs["width"]
+            if "height" in kwargs:
+                self.__height = kwargs["height"]
+            if "x" in kwargs:
+                self.__x = kwargs["x"]
+            if "y" in kwargs:
+                self.__y = kwargs["y"]
+            if "id" in kwargs:
+                self.id = kwargs["id"]
+
+    def to_dictionary(self):
+        """ Returns the dictionary representation of a rectangle """
+        return dict({"id": self.id, "width": self.__width,
+                     "height": self.__height, "x": self.__x, "y": self.__y})
