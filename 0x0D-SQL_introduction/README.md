@@ -112,6 +112,13 @@ Write a script that lists the number of records with the same score in the table
 - The list should be sorted by the number of records (descending)
 - The database name will be passed as an argument to the `mysql` command
 
+#### 16. Say my name
+Write a script that lists all records of the table `second_table` of the database `hbtn_0c_0` in your MySQL server.
+- Dont list rows without a `name` value
+- Results should display the score and the name (in this order)
+- Records should be listed by descending score
+- The database name will be passed as an argument to the `mysql` command
+
 ---
 ## Author :bust_in_silhouette:
 - [Adrian Vides] | [Twitter] | [GitHub]
