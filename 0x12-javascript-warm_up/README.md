@@ -2,11 +2,9 @@
 ---
 
 ## Description :newspaper:
+
 This project was created with learning purposes at Holberton School; on `Ubuntu 14.04` `Node 10`; and is an introduction to JavaScript.
-
----
-
-JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc.
+- JavaScript is a programming language that adds interactivity to your website. This happens in games, in the behavior of responses when buttons are pressed or with data entry on forms; with dynamic styling; with animation, etc.
 
 <center>
 
