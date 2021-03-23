@@ -1,1 +1,2 @@
- return myVar = 333;
+#!/usr/bin/node
+var myVar = 333;
