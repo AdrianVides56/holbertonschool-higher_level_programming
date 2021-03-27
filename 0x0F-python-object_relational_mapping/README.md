@@ -56,7 +56,7 @@ your@shell:~/0x0F$ ./0-select_states.py root root hbtn_0e_0_usa
 
 #### 1. Filter states
 Write a script that lists all states with a name starting with `N` from the database `hbtn_0e_0_usa`:
-- - Your script should take 3 arguments: `mysql username`, ``mysql password`` and ``database name`` (no argument validation needed)
+- Your script should take 3 arguments: `mysql username`, ``mysql password`` and ``database name`` (no argument validation needed)
 ```shell
 your@shell:~/0x0F$ cat 0-select_states.sql
 -- Create states table in hbtn_0e_0_usa with some data
