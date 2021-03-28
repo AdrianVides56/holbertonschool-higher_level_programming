@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
     """ Instruction to the database """
     cur.execute("SELECT * FROM states WHERE\
-    name REGEXP '^N.+' ORDER BY id ASC")
+    name REGEXP '^N' ORDER BY id ASC")
     for row in cur.fetchall():
         print(row)
 
