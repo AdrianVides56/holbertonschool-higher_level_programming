@@ -16,9 +16,9 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     """ Instruction to the database """
-    cur.execute("SELECT * FROM states WHERE\
-    name REGEXP '^N' ORDER BY id ASC")
-    for row in cur.fetchall():
+    cur.execute("SELECT * FROM states WHERE name REGEXP '^N' ORDER BY id ASC")
+    rows = cur.fetchall()
+    for row in rows:
         print(row)
 
     """ Clean up """
