@@ -22,3 +22,6 @@ print("-----------------")
 my_list = MyList()
 print(my_list)
 my_list.print_sorted()
+print("-----------------")
+my_list = [22, 23, 24]
+my_list.print_sorted()
